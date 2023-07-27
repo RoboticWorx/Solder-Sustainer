@@ -1,0 +1,38 @@
+#include <AccelStepper.h>
+
+const int stepPin = 4;
+const int dirPin = 5;
+const int forPin = 6;
+const int backPin = 7;
+const int rgbLed = 38;
+
+const int extrudeSpeed = 75;
+
+AccelStepper extruder(1, stepPin, dirPin); // (Type:driver(1 is default driver), STEP, DIR)
+ 
+void setup()
+{  
+  extruder.setMaxSpeed(1000);
+  pinMode(forPin, INPUT_PULLDOWN);
+  pinMode(backPin, INPUT_PULLDOWN);
+}
+
+void loop()
+{
+  if (digitalRead(forPin) == HIGH)
+  {
+    extruder.setSpeed(extrudeSpeed);
+    extruder.runSpeed();
+  }
+  else if (digitalRead(backPin) == HIGH)
+  {
+    extruder.setSpeed(-extrudeSpeed);
+    extruder.runSpeed();
+  }
+  else 
+  {
+    extruder.setSpeed(0);
+    extruder.stop();
+  }
+}
+
