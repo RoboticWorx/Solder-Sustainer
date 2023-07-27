@@ -6,3 +6,5 @@ Thanks for reading and happy making!
 
 Regards,
 Worx
+
+**_(Remember, you can download anything you'd like for yourself, but you CAN'T sell it. All my work is licensed, thanks!)_**
