@@ -6,5 +6,5 @@ Files for my solder sustainer project.
 Be sure to go to https://www.roboticworx.io/ for detailed tutorials for a variety of projects! 
 Thanks for reading and happy making!
 
-Regards,
-Worx
+Best regards,
+Justin
